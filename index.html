@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgar Rodriguez - Baseball Operations Portfolio</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fafafa;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ddd;
+        }
+        h1 { margin: 15px 0 5px 0; font-size: 2.2rem; font-weight: 700; color: #111; }
+        .subtitle { font-size: 1.1rem; color: #555; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        .about-text { text-align: left; font-size: 1.05rem; color: #333; max-width: 700px; margin: 0 auto; }
+        hr { border: 0; height: 1px; background: #ddd; margin: 40px 0; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .card h3 { margin-top: 0; color: #111; font-size: 1.25rem; }
+        .card p { font-size: 0.95rem; color: #555; }
+        .card a { display: inline-block; margin-top: 15px; color: #0066cc; text-decoration: none; font-weight: 600; }
+        .card a:hover { text-decoration: underline; }
+        footer { text-align: center; margin-top: 60px; font-size: 0.9rem; color: #777; }
+        footer a { color: #333; margin: 0 10px; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Replace 'your-photo.jpg' with your actual image path -->
+        <img src="your-photo.jpg" alt="Edgar Rodriguez" class="profile-pic">
+        <h1>Edgar Rodriguez</h1>
+        <div class="subtitle">Baseball Operations & Player Performance</div>
+        <p class="about-text">
+            I am a former collegiate and professional pitcher transitioning into baseball operations, player development, and R&D. My background gives me a unique perspective: I have spent years on the mound utilizing modern player-development technology like TrackMan and Rapsodo to adjust my own mechanics and pitch designs. Now, I pair that hands-on feel for the game with an expanding technical toolkit, including building data-driven systems in Python to evaluate talent, find statistical edges, and translate complex metrics into actionable on-field strategies for players and coaching staffs.
+        </p>
+    </header>
+
+    <hr>
+
+    <h2 style="text-align: center; margin-bottom: 30px; font-weight: 600;">Portfolio Projects</h2>
+    
+    <div class="grid">
+        <div class="card">
+            <h3>The EDGE Project</h3>
+            <p>A proprietary Python evaluation tool designed to ingest raw tracking metrics (velocity, IVB, HB, spin) to calculate pitch grades, identify MLB comparables, evaluate redundancy, and project optimal target shapes.</p>
+            <a href="https://github.com/edgrod2727-debug/edge" target="_blank">View Repository &rarr;</a>
+        </div>
+
+        <div class="card">
+            <h3>Scouting & R&D Reports</h3>
+            <p>Comprehensive evaluations blending Statcast datasets with mechanical sequencing analysis. Features data-driven reports and actionable development plans for Emerson Hancock, Quinn Mathews, and Gio Rojas.</p>
+            <a href="URL_TO_YOUR_REPORTS_FOLDER_OR_DRIVE" target="_blank">View Reports &rarr;</a>
+        </div>
+
+        <div class="card">
+            <h3>Baseball Articles</h3>
+            <p>A series of analytical insights published on LinkedIn covering roster metrics, high school draft profiling, the physics of raw stuff versus design execution, and effective staff communication.</p>
+            <a href="https://www.linkedin.com/in/edgar-rodriguez-0a7a25288/" target="_blank">Read Articles &rarr;</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact: <a href="mailto:edgrod2727@gmail.com">edgrod2727@gmail.com</a> | <a href="https://www.linkedin.com/in/edgar-rodriguez-0a7a25288/" target="_blank">LinkedIn</a> | <a href="https://github.com/edgrod2727-debug" target="_blank">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
