@@ -23,7 +23,9 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            object-position: top; /* Keeps your face centered in the circle */
             border: 2px solid #ddd;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         }
         h1 { margin: 15px 0 5px 0; font-size: 2.2rem; font-weight: 700; color: #111; }
         .subtitle { font-size: 1.1rem; color: #555; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
@@ -40,14 +42,17 @@
             border: 1px solid #e0e0e0;
             border-radius: 4px;
             transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
         .card h3 { margin-top: 0; color: #111; font-size: 1.25rem; }
-        .card p { font-size: 0.95rem; color: #555; }
-        .card a { display: inline-block; margin-top: 15px; color: #0066cc; text-decoration: none; font-weight: 600; }
+        .card p { font-size: 0.95rem; color: #555; margin-bottom: 20px; }
+        .card a { display: inline-block; color: #0066cc; text-decoration: none; font-weight: 600; }
         .card a:hover { text-decoration: underline; }
         footer { text-align: center; margin-top: 60px; font-size: 0.9rem; color: #777; }
         footer a { color: #333; margin: 0 10px; text-decoration: none; }
@@ -56,8 +61,8 @@
 <body>
 
     <header>
-        <!-- Replace 'your-photo.jpg' with your actual image path -->
-        <img src="your-photo.jpg" alt="Edgar Rodriguez" class="profile-pic">
+        <!-- FIXED: Using URL-encoded filename so spaces don't break the image -->
+        <img src="Untitled%20design%20(7)_2.jpg" alt="Edgar Rodriguez" class="profile-pic">
         <h1>Edgar Rodriguez</h1>
         <div class="subtitle">Baseball Operations & Player Performance</div>
         <p class="about-text">
@@ -71,20 +76,26 @@
     
     <div class="grid">
         <div class="card">
-            <h3>The EDGE Project</h3>
-            <p>A proprietary Python evaluation tool designed to ingest raw tracking metrics (velocity, IVB, HB, spin) to calculate pitch grades, identify MLB comparables, evaluate redundancy, and project optimal target shapes.</p>
+            <div>
+                <h3>The EDGE Project</h3>
+                <p>A proprietary Python evaluation tool designed to ingest raw tracking metrics (velocity, IVB, HB, spin) to calculate pitch grades, identify MLB comparables, evaluate redundancy, and project optimal target shapes.</p>
+            </div>
             <a href="https://github.com/edgrod2727-debug/edge" target="_blank">View Repository &rarr;</a>
         </div>
 
         <div class="card">
-            <h3>Scouting & R&D Reports</h3>
-            <p>Comprehensive evaluations blending Statcast datasets with mechanical sequencing analysis. Features data-driven reports and actionable development plans for Emerson Hancock, Quinn Mathews, and Gio Rojas.</p>
-            <a href="URL_TO_YOUR_REPORTS_FOLDER_OR_DRIVE" target="_blank">View Reports &rarr;</a>
+            <div>
+                <h3>Scouting & R&D Reports</h3>
+                <p>Comprehensive evaluations blending Statcast datasets with mechanical sequencing analysis. Features data-driven reports and actionable development plans for Emerson Hancock, Quinn Mathews, and Gio Rojas.</p>
+            </div>
+            <a href="#" target="_blank">View Reports &rarr;</a>
         </div>
 
         <div class="card">
-            <h3>Baseball Articles</h3>
-            <p>A series of analytical insights published on LinkedIn covering roster metrics, high school draft profiling, the physics of raw stuff versus design execution, and effective staff communication.</p>
+            <div>
+                <h3>Baseball Articles</h3>
+                <p>A series of analytical insights published on LinkedIn covering roster metrics, high school draft profiling, the physics of raw stuff versus design execution, and effective staff communication.</p>
+            </div>
             <a href="https://www.linkedin.com/in/edgar-rodriguez-0a7a25288/" target="_blank">Read Articles &rarr;</a>
         </div>
     </div>
